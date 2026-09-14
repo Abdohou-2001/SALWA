@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>SALWA ♥️</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@500;600&family=Dancing+Script:wght@600&family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="vignette"></div>
+<div class="ambient-light l1"></div>
+<div class="ambient-light l2"></div>
+<div id="bg-particles"></div>
+<div id="petals-layer"></div>
+<div id="bokeh-layer"></div>
+
+<main class="scene" id="scene">
+  <div class="salwa-title"><span>SALWA</span><div class="line"></div></div>
+  <div class="bouquet-wrapper">
+    <div class="bouquet" id="bouquet">
+      <svg viewBox="0 0 320 420" class="bouquet-svg">
+        <path d="M40 260 Q 160 340 280 260 L 250 400 Q 160 430 70 400 Z" fill="#111010"/>
+        <path d="M55 275 Q 160 330 265 275" fill="none" stroke="#c9a96e" stroke-width="1" opacity="0.6"/>
+        <ellipse cx="90" cy="210" rx="28" ry="52" fill="#1a3a22" transform="rotate(-25 90 210)"/>
+        <ellipse cx="230" cy="210" rx="28" ry="52" fill="#1a3a22" transform="rotate(25 230 210)"/>
+        <g><circle cx="160" cy="155" r="42" fill="#7a0f1d"/><circle cx="150" cy="145" r="18" fill="#a31428"/><circle cx="170" cy="148" r="16" fill="#c41a2f"/></g>
+        <g><circle cx="105" cy="165" r="34" fill="#7a0f1d"/><circle cx="98" cy="157" r="14" fill="#a31428"/></g>
+        <g><circle cx="215" cy="165" r="34" fill="#7a0f1d"/><circle cx="208" cy="157" r="14" fill="#a31428"/></g>
+        <g><circle cx="125" cy="115" r="30" fill="#8a1020"/><circle cx="132" cy="111" r="10" fill="#d92a42"/></g>
+        <g><circle cx="195" cy="115" r="30" fill="#8a1020"/><circle cx="202" cy="111" r="10" fill="#d92a42"/></g>
+        <g><circle cx="160" cy="90" r="28" fill="#9b1223"/></g>
+        <g><circle cx="160" cy="210" r="36" fill="#6e0e1a"/></g>
+        <path d="M120 320 Q 160 340 200 320 Q 190 350 160 360 Q 130 350 120 320" fill="#1a1a1a" stroke="#c9a96e" stroke-width="0.8"/>
+        <circle cx="160" cy="330" r="10" fill="#c9a96e"/>
+      </svg>
+      <div class="bouquet-glow"></div>
+    </div>
+    <button class="envelope-btn" id="envelopeBtn">
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body"></div>
+        <div class="envelope-seal">♥</div>
+        <div class="letter-peek"></div>
+      </div>
+      <div class="envelope-text">
+        <h2>رسالة إلى SALWA ♥️</h2>
+        <p>اضغط لفتح الرسالة</p>
+      </div>
+    </button>
+  </div>
+</main>
+
+<div class="letter-overlay" id="letterOverlay">
+  <div class="letter-backdrop" id="letterBackdrop"></div>
+  <article class="letter-paper" id="letterPaper">
+    <div class="paper-ornament tl"></div><div class="paper-ornament tr"></div>
+    <div class="paper-ornament bl"></div><div class="paper-ornament br"></div>
+    <div class="letter-content">
+      <h1 class="letter-title" id="letterTitle">إلى SALWA ♥️</h1>
+      <div class="letter-body" id="letterBody">
+        <p class="line">داز وقت طويل مادوينا</p>
+        <p class="line">واليوم بغيت نقوليك بلاصتك باقة فقلب</p>
+        <p class="line">عزيزة عليا بزاف زوينة ضريفة</p>
+        <p class="line">غبرت عليك ولكن الاسباب لي خلاتني</p>
+        <p class="line">انا الان فرحان حينت رجعت نهضر معاك</p>
+        <p class="line">شكرا عمري على كل شيء</p>
+      </div>
+      <div class="letter-signature" id="letterSignature">عبدو ♥️</div>
+    </div>
+    <div class="letter-footer" id="letterFooter">
+      <span>♥️</span>
+      <button class="close-btn" id="closeBtn">إغلاق الرسالة</button>
+    </div>
+  </article>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
